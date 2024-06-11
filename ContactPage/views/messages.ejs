@@ -5,13 +5,11 @@
 </head>
 <body>
   <h1><%= title %></h1>
-  <p>Welcome to your Express.js application using EJS!</p>
-
-  <!-- Form to submit data -->
-  <form action="/submit" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name">
-    <button type="submit">Submit</button>
-  </form>
+  <ul>
+    <% messages.forEach(message => { %>
+      <li><%= message.text %></li>
+    <% }) %>
+  </ul>
+  <p><a href="/">Go Back</a></p>
 </body>
 </html>
