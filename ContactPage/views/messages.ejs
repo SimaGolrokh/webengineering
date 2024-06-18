@@ -2,14 +2,17 @@
 <html>
 <head>
   <title><%= title %></title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
 </head>
 <body>
-  <h1><%= title %></h1>
-  <ul>
-    <% messages.forEach(message => { %>
-      <li><%= message.text %></li>
-    <% }) %>
-  </ul>
-  <p><a href="/">Go Back</a></p>
+  <div>
+    <h1><%= title %></h1>
+    <ul>
+      <% messages.forEach(message => { %>
+        <li><%= message.text %></li>
+      <% }) %>
+    </ul>
+    <p><a href="/">Go Back</a></p>
+  </div>
 </body>
 </html>

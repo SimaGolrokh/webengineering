@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact us </title>
+  <title><%= title %></title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
 </head>
 <body>
-    <h1>#ContactUs</h1>
-    <p>leave a message .we love hear from you!</p>
+  <div>
+    <h1><%= title %></h1>
+    <p>Welcome to the Message Board!</p>
 
-  <form action="/messages/new" method="post">
-    <label for="text">Message:</label>
-    <input type="text" id="text" name="text" required>
-    <button type="submit">Submit</button>
-  </form>
+    <form action="/messages/new" method="post">
+      <label for="text">Message:</label>
+      <input type="text" id="text" name="text" required>
+      <button type="submit">Submit</button>
+    </form>
 
-  <p><a href="/messages">View Messages</a></p>
+    <p><a href="/messages">View Messages</a></p>
+  </div>
 </body>
 </html>
